@@ -12,7 +12,7 @@ logger = get_logger()
 
 try:
     conn = pymongo.MongoClient(env.mongodb_localhost)
-    db = conn.TestingMqtt
+    db = conn.StoreRealTimeData
     logger.info("Coonection Successful to database :%s" % (env.mongodb_localhost))
 except Exception as e:
     logger.error("Exception caught While connection Database: %s" % e)
