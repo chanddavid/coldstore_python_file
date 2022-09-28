@@ -60,7 +60,7 @@ async def MqttConnect(sendNotificationTime):
                         #         await send_notification(kwargs, message)
                         #     print("End critical temperature")
                     except:
-                        print("msg format not valid")
+                        pass
     except Exception as e:
             logger.error("Exception caught While connection MqttBroker: %s" % e)
 
