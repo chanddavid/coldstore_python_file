@@ -17,6 +17,7 @@ async def send_notification(kwargs, message):
     print(status_code)
     print(response)
     print(response_json)
-    
+    print("success")
+
 
 
